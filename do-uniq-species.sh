@@ -1,4 +1,4 @@
- 
+  
 # Purpose: Find unique species in a dataset
 # Date: Tuesday, October 17, 2017
 # Authors: NIrakar Sahoo
@@ -8,3 +8,6 @@ for data_file in $@
 
 	do 
 	echo "Uniquie  species in $data-file"
+	# Extract species name from data_file
+	cut -d , -f 2 $data_file 
+
