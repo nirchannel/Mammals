@@ -12,3 +12,7 @@ for data_file in $@
 	cut -d , -f 2 $data_file | sort | uniq
 	done
 
+for  analysis_stat in $@
+	do 
+	echo "Animal number in $analysis_stat"
+
